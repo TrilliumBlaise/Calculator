@@ -1,0 +1,219 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-size: 16px;
+}
+
+button {
+  background-color: rgb(240, 240, 240);
+  border: none;
+  font-size: 1.25em;
+  margin: 1px;
+}
+
+.buttons button:hover {
+  background-color: rgb(221, 221, 221);
+  border: 1px outset grey;
+}
+
+.buttons button:active {
+  background-color: rgb(205, 205, 205);
+  border: 1px outset grey;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 75%;
+  width: 50%;
+  background-color: rgb(228, 228, 228);
+  border: 1px solid black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5%;
+  padding-left: 1%;
+}
+
+.calculator-container {
+  height: 95%;
+  width: 100%;
+  padding-top: 1%;
+  display: flex;
+}
+
+.calculator {
+  height: 100%;
+  width: 60%;
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 7%;
+  gap: 2%;
+}
+
+.navigation {
+  height: 100%;
+  width: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation:hover {
+  background-color: rgb(175, 175, 175);
+}
+
+.console {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 1%;
+}
+
+.equation {
+  font-size: 1.25em;
+  color: rgb(105, 105, 105);
+}
+
+.result {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+.buttons {
+  height: 73%;
+}
+
+.memory-buttons {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 10%;
+}
+
+.memory-button {
+  font-size: 1em;
+  width: 12%;
+  background-color: rgb(228, 228, 228);
+}
+
+.calculator-buttons {
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.number {
+  background-color: white;
+}
+
+.equals {
+  background-color: rgb(137, 188, 230);
+}
+
+.equals:hover {
+  background-color: rgb(78, 149, 207);
+}
+.memory-history {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+  width: 40%;
+}
+
+.memory-history .header {
+  justify-content: flex-start;
+}
+
+.memory-history button {
+  width: 40%;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+.active-tab {
+  border-bottom: 3px solid rgb(0, 120, 215);
+}
+
+.history,
+.memory {
+  overflow-y: scroll;
+  height: 95%;
+  width: 100%;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+.history div,
+.memory div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.history h3,
+.memory h3 {
+  font-weight: 400;
+}
+.history div h2 {
+  font-size: 1.75em;
+}
+
+.history div:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.history div:active {
+  background-color: rgb(205, 205, 205);
+}
+
+.memory-history .delete {
+  justify-self: flex-end;
+  background-color: rgb(228, 228, 228);
+  width: 15%;
+  opacity: 0;
+}
+
+.delete:hover {
+  background-color: rgb(221, 221, 221);
+  border: 1px outset grey;
+}
+
+.delete:active {
+  background-color: rgb(205, 205, 205);
+  border: 1px outset grey;
+}
+
+.not-usable {
+  pointer-events: none;
+  opacity: 0.4;
+}

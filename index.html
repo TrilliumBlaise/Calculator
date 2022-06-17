@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" type="module"></script>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="container">
+        <div class="header">
+          <div>Calculator</div>
+          <div></div>
+        </div>
+        <div class="calculator-container">
+          <div class="calculator">
+            <div class="breadcrumbs">
+              <div class="navigation">
+                <i class="fi fi-rr-menu-burger"></i>
+              </div>
+              <h2>Standard</h2>
+            </div>
+            <div class="console">
+              <div class="equation"></div>
+              <div class="result">0</div>
+            </div>
+            <div class="buttons">
+              <div class="memory-buttons">
+                <button data-memory-clear class="memory-button">MC</button>
+                <button data-memory-recall class="memory-button">MR</button>
+                <button data-memory-add class="memory-button">M+</button>
+                <button data-memory-subtract class="memory-button">M-</button>
+                <button data-memory-store class="memory-button">MS</button>
+              </div>
+              <div class="calculator-buttons">
+                <button data-percent>%</button>
+                <button data-clear-entry>CE</button>
+                <button data-clear-inputs>C</button>
+                <button data-backspace><i class="fi fi-rs-delete"></i></button>
+                <button data-fraction><sup>1/x</sup></button>
+                <button data-square>x<sup>2</sup></button>
+                <button data-square-root><i class="fi fi-rr-square-root"></i></button>
+                <button data-operand="/">/</button>
+                <button data-number="7" class="number">7</button>
+                <button data-number="8" class="number">8</button>
+                <button data-number="9" class="number">9</button>
+                <button data-operand="*"><i data-operand="*" class="fi fi-rr-cross"></i></button>
+                <button data-number="4" class="number">4</button>
+                <button data-number="5" class="number">5</button>
+                <button data-number="6" class="number">6</button>
+                <button data-operand="-"><i data-operand="-" class="fi fi-rr-minus"></i></button>
+                <button data-number="1" class="number">1</button>
+                <button data-number="2" class="number">2</button>
+                <button data-number="3" class="number">3</button>
+                <button data-operand="+"><i data-operand="+" class="fi fi-rr-plus"></i></button>
+                <button data-negate class="number">±</button>
+                <button data-number="0" class="number">0</button>
+                <button data-decimal class="number">.</button>
+                <button data-equals class="equals">=</button>
+              </div>
+            </div>
+          </div>
+          <div class="memory-history">
+            <div class="header">
+              <button data-history class="memory-button active-tab">History</button>
+              <button data-memory class="memory-button">Memory</button>
+            </div>
+            <div class="history active">
+              <h3>There's no history yet</h3>
+            </div>
+            <div class="memory">
+              <h3>There's no memory yet</h3>
+            </div>
+            <button data-delete class="delete"><i class="fi fi-rr-trash"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
