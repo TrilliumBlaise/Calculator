@@ -156,6 +156,16 @@ document.addEventListener('click', e => {
       return;
     }
     if (state.currentNumber == undefined) state.currentNumber = result.innerText;
+    if (isOperand(state.equation) && state.currentNumber != undefined) {
+      state.equation.push(state.currentNumber);
+      doCalculation();
+      state.equation.push('=');
+      state.history.push({ equation: state.equation, result: state.currentNumber });
+      displayHistory();
+      state.calculated = false;
+      state.equation = [];
+      displayResult();
+    }
     resetSecondaryOperands(state);
     state.equation.push(state.currentNumber, parent.dataset.operand);
     displayEquation();
